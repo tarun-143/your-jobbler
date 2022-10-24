@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const helmet=require('helmet');
 const cors=require('cors');
-const xss=requir('xss');
+const xss=require('xss');
 const rateLimiter=require('express-rate-limit');
 const authenticateUser=require('./middleware/authentication');
 // error handler
