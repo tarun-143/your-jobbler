@@ -31,7 +31,7 @@ app.use(express.json());
 
 // routes
 app.get('/', (req, res) => {
-  console.log('sss')
+  //console.log('sss')
   res.send('jobs-api');
 });
 app.use('/api/v1/auth',authRouter);
