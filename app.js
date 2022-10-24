@@ -32,7 +32,7 @@ app.use(express.json());
 
 // routes
 app.get('/', (req, res) => {
-  res.send('<h1>Jobs API</h1><a href="/api-docs">Documentation</a>');
+  res.send('jobs-api');
 });
 app.use('/api/v1/auth',authRouter);
 app.use('/api/v1/jobs',authenticateUser,jobsRouter);
@@ -40,7 +40,7 @@ app.use('/api/v1/jobs',authenticateUser,jobsRouter);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const start = async () => {
 
