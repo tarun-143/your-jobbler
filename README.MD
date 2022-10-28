@@ -3,7 +3,14 @@
 ```bash
 npm install && npm start
 ```
+-node js:serverside
+-mongoose:Data base
+-swaggerUI:documentation
+-heroku:deployment
 
+
+
+##heroku deployed URL https://your-jobbler.herokuapp.com/
 #### Database Connection
 
 1. Import connect.js
@@ -41,6 +48,12 @@ Email Validation Regex
 - If no user or password does not match, throw UnauthenticatedError
 - If correct, generate Token
 - Send Response with Token
+
+###create jobs
+-jobs to be created and created_bY stored.
+###get jobs
+-send response of jobs associated with respective user.
+
 
 #### Mongoose Errors
 
